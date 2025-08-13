@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -566,8 +566,8 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
-
-    padding: 4rem;
+.about{
+    padding:4rem;
 }
 
 }

@@ -154,8 +154,8 @@ span {
     box-shadow: 0 0 1rem var(--main-bg-color);
 }
 .MyAccounts a svg {
-    width: 2rem; 
-    height: 2rem; 
+    width: 2.1rem; 
+    height: 2.1rem; 
     fill: var(--main-bg-color); 
     transition: fill 0.5s ease;
 }

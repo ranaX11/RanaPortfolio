@@ -572,7 +572,7 @@ span {
 
 }
 
-@media (max-width : 400px) {
+@media (max-width : 410px) {
     .home{
         flex-direction: column-reverse;
     }

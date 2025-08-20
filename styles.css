@@ -61,7 +61,7 @@ section {
 
 .navbar a {
     font-size: 1.7rem;
-    color: (var(--text-bg-color));
+    color: var(--text-bg-color);
     margin-left: 4rem;
     transition: .3s;
 }

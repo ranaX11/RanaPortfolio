@@ -213,12 +213,99 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.service h2 {
+.involvement h1{
+    margin-bottom: 0.5rem;
+}
+.involvement-con {
+    margin: 5rem auto;
+    max-width: 34.15rem;
+}
+.checkpoint{
+    max-width: 34rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    
+}
+.checkpoint div {
+border: 1.2px solid var(--main-bg-color);
+border-radius: 1rem;
+padding: 1.5rem;
+}
+.checkpoint p {
+    line-height: 20px;
+    color: #ccc;
+}
+.checkpoint:nth-child(odd){
+    border-left: 2px solid var(--main-bg-color);
+    padding-left: 3rem;
+    transform: translateX(16.9rem);
+}
+
+.checkpoint:nth-child(even){
+    border-right: 2px solid var(--main-bg-color);
+    padding-right: 3rem;
+    transform: translateX(-16.9rem);
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content: "";
+    background: #4736a9;
+    width: 3rem;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before {
+left: 0;
+}
+.checkpoint:nth-child(even)::before {
+right:  0;
+}
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    content: "";
+    background: #fff;
+    box-shadow: 0 0 0.5rem var(--main-bg-color);
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before {
+    left: -0.5rem;
+}
+.checkpoint:nth-child(even) div::before {
+    right:  -0.5rem;
+}
+.checkpoint a img{
+    height: 1;
+    width: 1;
+}
+
+.checkpoint img.checkpoint-img {
+    width: 50%; /* يمكنك تعديل هذا حسب الحاجة */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 1rem; /* لتنعيم حواف الصورة */
+    margin-bottom: 1rem; /* لإضافة مسافة بين الصورة والنص */
+    
+}
+
+
+
+
+
+
+
+.interests h2 {
     margin-bottom: 5rem;
 
 }
 
-.services-container {
+.interests-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +313,7 @@ span {
     gap: 2rem;
 }
 
-.services-container .services-box {
+.interests-container .interests-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
@@ -236,22 +323,22 @@ span {
     transition: .5s ease;
 }
 
-.services-container .services-box:hover {
+.interests-container .interests-box:hover {
     border-color: var(--main-bg-color);
     transform: scale(1.02);
 
 }
 
-.services-box i {
+.interests-box i {
     font-size: 7rem;
     color: var(--main-bg-color);
 }
 
-.services-box h3 {
+.interests-box h3 {
     font-size: 2.5rem;
 }
 
-.services-box p {
+.interests-box p {
     font-size: 1.5rem;
     margin: 1rem;
 }
@@ -436,7 +523,7 @@ span {
         padding: 2rem 3%;
     }
 
-    .services {
+    .interests {
         padding: 10rem;
     }
 }
@@ -593,6 +680,29 @@ span {
   .about-content {
     padding: 2rem;
   }
+.involvement-con{
+    width: 80vw;
+}
+.involvement-con .checkpoint{
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.involvement-con .checkpoint::before {
+    width: 3px;
+    height: 4em;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.involvement-con .checkpoint div::before {
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
     .footer {
         flex-direction: column-reverse;
     }

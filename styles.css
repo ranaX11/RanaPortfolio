@@ -231,6 +231,7 @@ span {
 border: 1.2px solid var(--main-bg-color);
 border-radius: 1rem;
 padding: 1.5rem;
+
 }
 .checkpoint p {
     line-height: 20px;
@@ -281,17 +282,22 @@ right:  0;
 .checkpoint:nth-child(even) div::before {
     right:  -0.5rem;
 }
-.checkpoint a img{
+.checkpoint img{
     height: 1;
     width: 1;
 }
+.image-container {
+    display: flex; /* to make the img in row*/
+    justify-content: center;
+    gap: 10px; /* space*/
+}
+
 
 .checkpoint img.checkpoint-img {
-    width: 50%; /* يمكنك تعديل هذا حسب الحاجة */
-    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+    width: 45%; 
+    height: auto; 
     border-radius: 1rem; /* لتنعيم حواف الصورة */
     margin-bottom: 1rem; /* لإضافة مسافة بين الصورة والنص */
-    
 }
 
 
